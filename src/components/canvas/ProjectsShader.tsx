@@ -18,17 +18,10 @@ const ProjectsShader: React.FC = () => {
   const images = [
     {
       title: 'AI projects',
-      position: [-0.6, -1 + posY, -0.09],
+      position: [0, -1 + posY, -0.09],
       src: '/img/projects/Screenshot_8.png',
-      url: 'https://consoles.ai/',
-    },
-    {
-      title: '',
-      position: [0.6, -1 + posY, -0.09],
-      src: '/img/projects/chatbot/1.png',
       url: 'https://rhea.bytebreeze.com.au/',
     },
-
     {
       title: '',
       position: [-0.6, -2 + posY, -0.09],
