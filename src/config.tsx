@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const titleDefault = 'Joseph Dale Bañares'
+const titleDefault = 'Yelyzaveta Podkopaieva'
 const url = 'https://daleban3d.vercel.app/'
 const description =
   'Joseph Dale Bañares is a Creative Developer based in the Philippines. He is an autodidact with a passion for building beautiful and interactive websites.'

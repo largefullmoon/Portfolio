@@ -17,7 +17,7 @@ const baubleMaterial = new THREE.MeshLambertMaterial({
   emissive: 'black',
 })
 
-const ObjectClump = ({}) => {
+const ObjectClump = ({ }) => {
   return (
     <>
       <PerspectiveCamera
@@ -44,7 +44,7 @@ const ObjectClump = ({}) => {
           </Html>
         }
       >
-        <Title>{'hyamero@daleban.tech'}</Title>
+        <Title>{'podkopaevalirezerv@gmail.com'}</Title>
         <Physics gravity={[0, 5, 0]} iterations={10}>
           <Pointer />
           <Balls />

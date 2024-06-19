@@ -30,7 +30,7 @@ const Dom = ({ children }) => {
     <>
       <Navbar />
       <div
-        className={`${zIndex} absolute top-0 left-0 w-screen h-screen px-5 mx-auto overflow-hidden sm:px-10 lg:px-20 dom`}
+        className={`${zIndex} absolute top-0 left-0 w-screen h-screen px-5 mx-auto sm:px-10 lg:px-20 dom`}
         ref={ref}
       >
         {!unmount && path === '/' ? <Loader setUnmount={setUnmount} /> : null}

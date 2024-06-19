@@ -17,32 +17,75 @@ const ProjectsShader: React.FC = () => {
 
   const images = [
     {
-      title: 'Uno',
-      position: [-0.1, -1 + posY, -0.09],
-      src: '/img/projects/iphone.jpg',
-      url: 'https://iphone-config.vercel.app/',
+      title: 'AI projects',
+      position: [-0.6, -1 + posY, -0.09],
+      src: '/img/projects/Screenshot_8.png',
+      url: 'https://consoles.ai/',
+    },
+    {
+      title: '',
+      position: [0.6, -1 + posY, -0.09],
+      src: '/img/projects/chatbot/1.png',
+      url: 'https://rhea.bytebreeze.com.au/',
     },
 
     {
-      title: 'Dos',
-      position: [0.1, -2 + posY, -0.09],
-      src: '/img/projects/laptop.jpg',
-      url: 'https://umamin.link/',
+      title: '',
+      position: [-0.6, -2 + posY, -0.09],
+      src: '/img/projects/chatbot/3.png',
+      url: 'https://www.cuservly.com/',
     },
 
     {
-      title: 'Tres',
-      position: [-0.1, -3 + posY, -0.09],
-      src: '/img/projects/hello.jpg',
-      url: 'https://chatti.vercel.app',
+      title: '',
+      position: [0.6, -2 + posY, -0.09],
+      src: '/img/projects/chatbot/2.png',
+      url: 'https://app.thinkforce.ai/',
     },
 
     {
-      title: 'Cuatro',
-      position: [0.1, -4 + posY, -0.09],
-      src: '/img/projects/head.jpg',
-      url: 'https://github.com/hyamero',
+      title: 'Treee.js Projects',
+      position: [-0.6, -3 + posY, -0.09],
+      src: '/img/projects/three/1.png',
+      url: 'https://vr.ff.com/us',
     },
+
+    {
+      title: '',
+      position: [0.6, -3 + posY, -0.09],
+      src: '/img/projects/three/3.png',
+      url: 'https://carvisualizer.plus360degrees.com/threejs/',
+    },
+    {
+      title: 'Ecommerce websites',
+      position: [0, -4 + posY, -0.09],
+      src: '/img/projects/Screenshot_1.png',
+      url: 'https://nclabeauty.com/',
+    },
+    {
+      title: '',
+      position: [-0.8, -5 + posY, -0.09],
+      src: '/img/projects/Screenshot_7.png',
+      url: 'https://www.cityblue.com.br/',
+    },
+
+    {
+      title: '',
+      position: [0, -5 + posY, -0.09],
+      src: '/img/projects/Screenshot_3.png',
+      url: 'https://www.creatifystore.net/',
+    },
+
+    {
+      title: '',
+      position: [0.8, -5 + posY, -0.09],
+      src: '/img/projects/Screenshot_2.png',
+      url: 'https://homeofdreams.org/',
+    },
+
+
+
+
   ]
 
   const { width } = useThree((state) => state.viewport)
@@ -58,7 +101,7 @@ const ProjectsShader: React.FC = () => {
       />
 
       <ScrollControls
-        pages={5.5}
+        pages={7.5}
         distance={1}
         damping={4}
         horizontal={false}
@@ -97,7 +140,7 @@ const ProjectsShader: React.FC = () => {
                   <Shader
                     image={src}
                     position={position as Vector3}
-                    planeArgs={[0.4, 0.6, 32, 32]}
+                    planeArgs={[0.8, 0.6, 32, 32]}
                     planeRotation={[0, 0, 0]}
                     wireframe={false}
                     pointer={true}
@@ -106,7 +149,7 @@ const ProjectsShader: React.FC = () => {
 
                   <Text
                     position={[0, position[1], 0.1] as Vector3}
-                    fillOpacity={0.7}
+                    fillOpacity={0.9}
                     font='/FogtwoNo5.otf'
                     fontSize={width / 16}
                     material-toneMapped={false}
@@ -116,10 +159,10 @@ const ProjectsShader: React.FC = () => {
                     {title}
                   </Text>
 
-                  <Text
-                    position={[-position[0], position[1], 0.4] as Vector3}
+                  {/* <Text
+                    position={[-position[0], position[1], 0.7] as Vector3}
                     strokeWidth={'0.1%'}
-                    strokeOpacity={0.4}
+                    strokeOpacity={0.5}
                     strokeColor='#ffffff'
                     fillOpacity={0}
                     font='/FogtwoNo5.otf'
@@ -129,7 +172,7 @@ const ProjectsShader: React.FC = () => {
                     anchorY='middle'
                   >
                     {i + 1}
-                  </Text>
+                  </Text> */}
                 </group>
               )
             })}

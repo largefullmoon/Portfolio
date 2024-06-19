@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import useStore from '@/helpers/store'
 import { useRouter } from 'next/router'
 
-export const Navbar: React.FC = ({}) => {
+export const Navbar: React.FC = ({ }) => {
   const router = useStore((s) => s.router)
   const _router = useRouter()
   const [active, setActive] = useState(_router.pathname)
@@ -28,7 +28,7 @@ export const Navbar: React.FC = ({}) => {
         className='text-xl cursor-pointer font-fog mix-blend-difference'
         onClick={() => router.push('/')}
       >
-        Dale B.
+        Yelyzaveta
       </span>
       <ul className='flex text-sm font-light tracking-wider space-x-4  md:space-x-10 font-ubuntu [&>*]:cursor-pointer [&>*]:leading-none [&>*:hover]:text-white [&>*]:transition-all'>
         {navItems.map((item) => {
@@ -41,9 +41,8 @@ export const Navbar: React.FC = ({}) => {
                 router.push(path)
                 setActive(path)
               }}
-              className={`${
-                active === path ? 'text-white' : 'text-white/75'
-              } hover-effect`}
+              className={`${active === path ? 'text-white' : 'text-white/75'
+                } hover-effect`}
             >
               {text}
             </li>

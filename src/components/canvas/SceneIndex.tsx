@@ -19,7 +19,7 @@ import {
 
 import { Model } from './Model'
 
-const SceneIndex = ({}) => {
+const SceneIndex = ({ }) => {
   useFrame((state) => {
     state.camera.position.lerp({ x: 0, y: 0, z: 12 } as Vector3, 0.005)
     state.camera.lookAt(0, 0, 0)
@@ -45,9 +45,9 @@ const SceneIndex = ({}) => {
           </Html>
         }
       >
-        <Model position={[0, -6, 0]} rotation={[0, -0.2, 0]} />
-        <Title>{`Joseph Dale`}</Title>
-        <TitleL>{`Joseph Dale`}</TitleL>
+        {/* <Model position={[0, -6, 0]} rotation={[0, -0.2, 0]} /> */}
+        <Title>{`Yelyzaveta Podkopaieva`}</Title>
+        <TitleL>{`Yelyzaveta Podkopaieva`}</TitleL>
         <Sparkles count={60} scale={[20, 20, 10]} size={1} speed={2} />
       </Suspense>
       <EffectComposer multisampling={0} disableNormalPass={true}>
@@ -72,7 +72,7 @@ const Title = ({ children }) => {
       position={[0, 0, -10]}
       lineHeight={1.3}
       font='/FogtwoNo5.otf'
-      fontSize={width / 3.5}
+      fontSize={width / 8}
       material-toneMapped={false}
       anchorX='center'
       anchorY='middle'
@@ -90,7 +90,7 @@ const TitleL = ({ children }) => {
       position={[0, 0, -10]}
       lineHeight={1.3}
       font='/FogtwoNo5.otf'
-      fontSize={width / 3.5}
+      fontSize={width / 8}
       material-toneMapped={false}
       anchorX='center'
       anchorY='middle'
