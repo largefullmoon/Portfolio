@@ -17,7 +17,7 @@ const ProjectsShader: React.FC = () => {
 
   const images = [
     {
-      title: 'AI projects',
+      title: 'AI Chatbot projects',
       position: [0, -1 + posY, -0.09],
       src: '/img/projects/chatbot/1.png',
       url: 'https://rhea.bytebreeze.com.au/',
@@ -50,28 +50,46 @@ const ProjectsShader: React.FC = () => {
       url: 'https://carvisualizer.plus360degrees.com/threejs/',
     },
     {
-      title: 'Ecommerce websites',
+      title: '',
+      position: [-0.8, -4 + posY, -0.09],
+      src: '/img/projects/three/7.png',
+      url: 'https://webshed.royssheds.com.au/',
+    },
+    {
+      title: '',
       position: [0, -4 + posY, -0.09],
+      src: '/img/projects/three/6.png',
+      url: 'https://gardenroomplanner.com/',
+    },
+    {
+      title: '',
+      position: [0.8, -4 + posY, -0.09],
+      src: '/img/projects/three/5.png',
+      url: 'https://imagin3d.reece.com.au/',
+    },
+    {
+      title: 'Ecommerce websites',
+      position: [-0.6, -5 + posY, -0.09],
       src: '/img/projects/Screenshot_1.png',
       url: 'https://nclabeauty.com/',
     },
     {
       title: '',
-      position: [-0.8, -5 + posY, -0.09],
+      position: [0.6, -5 + posY, -0.09],
       src: '/img/projects/Screenshot_7.png',
       url: 'https://www.cityblue.com.br/',
     },
 
     {
       title: '',
-      position: [0, -5 + posY, -0.09],
+      position: [-0.6, -6 + posY, -0.09],
       src: '/img/projects/Screenshot_3.png',
       url: 'https://www.creatifystore.net/',
     },
 
     {
       title: '',
-      position: [0.8, -5 + posY, -0.09],
+      position: [0.6, -6 + posY, -0.09],
       src: '/img/projects/Screenshot_2.png',
       url: 'https://homeofdreams.org/',
     },
