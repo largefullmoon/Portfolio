@@ -57,15 +57,9 @@ const ProjectsShader: React.FC = () => {
     },
     {
       title: '',
-      position: [0, -4 + posY, -0.09],
+      position: [0.8, -4 + posY, -0.09],
       src: '/img/projects/three/6.png',
       url: 'https://gardenroomplanner.com/',
-    },
-    {
-      title: '',
-      position: [0.8, -4 + posY, -0.09],
-      src: '/img/projects/three/5.png',
-      url: 'https://imagin3d.reece.com.au/',
     },
     {
       title: 'Ecommerce websites',
